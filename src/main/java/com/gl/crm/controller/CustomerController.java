@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.gl.crm.entity.Customer;
 import com.gl.crm.service.CustomerService;
@@ -36,7 +37,7 @@ public class CustomerController {
 		Customer theCustomer = new Customer();
 		theModel.addAttribute("customer", theCustomer);
 		
-		return "customer-from";
+		return "customer-form";
 	}
 	
 	@PostMapping("/saveCustomer")

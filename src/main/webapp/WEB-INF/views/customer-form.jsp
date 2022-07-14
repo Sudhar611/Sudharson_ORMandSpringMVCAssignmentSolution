@@ -21,32 +21,30 @@
 		<p class="h4 mb-4">Save Customer</p>
 
 		<form:form action="saveCustomer" modelAttribute="customer" method="POST">
-			
-			<div>
-				<form:hidden path="id'/>
-			</div>
+		
+			<form:hidden path="id" />
 
-			<div class="form-inline">
+			<div class="form-group">
 				<label>First Name:</label>
 				<form:input class="form-control mb-4 col-4" path="firstName" />
 			</div>
 
-			<div class="form-inline">
+			<div class="form-group">
 				<label>Last Name:</label>
 				<form:input class="form-control mb-4 col-4" path="lastName" />
 			</div>
 
-			<div class="form-inline">
+			<div class="form-group">
 				<label>Email:</label>
 				<form:input class="form-control mb-4 col-4" path="email" />
 			</div>
 
-			<button type="submit" class="btn btn-info col-2">Save</button>
+			<input type="submit" value="Save" class="btn btn-info col-2" />
 
 		</form:form>
 
 		<hr>
-		<a href="/LibraryManagement/books/list">Back to Books List</a>
+		<a href="/AssignmentCRM/customer/list">Back to List</a>
 
 	</div>
 </body>
